@@ -1,0 +1,79 @@
+{
+    "route": "100.5169143 13.71788, 100.5303468 13.7220491, 100.5281153 13.7263432, 100.536634 13.7294386, 100.5388978 13.7350198, 100.5404158 13.7447304, 100.5238369 13.7474595, 100.5217637 13.7359733, 100.5162705 13.7380994, 100.5161633 13.7352019, 100.5157663 13.732836, 100.5153533 13.7319866, 100.5165629 13.7223485, 100.5151507 13.71853, 100.5169143 13.71788",
+    "features": [
+      {
+        "id": "1",
+        "feature_type": "amenity",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.53606177447692, 13.729339483804994]
+        },
+        "properties": {
+          "category": "eatingdrinking",
+          "name": {
+            "en": "KFC Silom Edge"
+          },
+          "tagline": "ไก่ไทยไม่แพ้ ไก่ใดๆ ในโลก",
+          "description": "KFC (Kentucky Fried Chicken) is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken. It is the world's second-largest restaurant chain (as measured by sales) after McDonald's, with 22,621 locations globally in 150 countries as of December 2019.[4] The chain is a subsidiary of Yum! Brands, a restaurant company that also owns the Pizza Hut and Taco Bell chains.[5]"
+        }
+      },
+      {
+        "id": "2",
+        "feature_type": "amenity",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.52370452319033, 13.746042722653417]
+        },
+        "properties": {
+          "category": "eatingdrinking",
+          "name": {
+            "en": "โจ๊กสามย่าน"
+          },
+          "tagline": "ร้านโจ๊กในตำนาน",
+          "description": "โจ๊กสามย่าน ชื่อนี้นักชิมรุ่นใหญ่รู้จักในประวัติและความอร่อยมายาวนานทั้งรสชาติและรูปแบบร้านดั้งเดิมที่ตั้งอยู่ตรง “สามย่าน” จนบัดนี้ไม่มีร้านอยู่ตรงนั้นอีกแล้ว ขณะที่นักชิมรุ่นใหม่คงได้ยินถึงคำร่ำลือของ “โจ๊กสามย่าน” แต่ไม่ทันบรรยากาศร้านดั้งเดิม"
+        }
+      },
+      {
+        "id": "3",
+        "feature_type": "amenity",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.52433712952886, 13.721257828788106]
+        },
+        "properties": {
+          "category": "eatingdrinking",
+          "name": {
+            "en": "Blockfint"
+          },
+          "tagline": "กาแฟฟรี กล้าขอก็กล้าให้",
+          "description": "We are path breakers. We love to develop technology that simplifies complexity. Our technology serves as building blocks redefining financial and commodity markets."
+        }
+      },
+      {
+        "feature_type": "amenity",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.51954216211425, 13.723034669654414]
+        },
+        "properties": {
+          "category": "restroom",
+          "name": {
+            "en": "ห้องน้ำ Holiday Inn"
+          }
+        }
+      },
+      {
+        "feature_type": "amenity",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.53531712540278, 13.728294144056846]
+        },
+        "properties": {
+          "category": "restroom",
+          "name": {
+            "en": "ห้องน้ำ Silom Complex"
+          }
+        }
+      }
+    ]
+  }
