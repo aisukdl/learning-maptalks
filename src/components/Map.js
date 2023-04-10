@@ -1,15 +1,10 @@
-import * as maptalks from 'maptalks';
 import { useEffect } from 'react';
-import mapConfig from '../utils/mapConfig.json'
-import { createMap } from '../utils/map/mapCanvas';
-import { mapRoute } from '../utils/map/mapRoute';
-
+import { createMap } from '../utils/map/mapCanvas'
+import { mapLayers } from '../utils/map/mapLayer';
 function Map() {
   useEffect(() => {
-    const map = createMap();
+    const map = createMap(mapLayers);
     return () => {
-      // const vectorLayer = map.getLayer('vector'); // Get the vector layer
-      // vectorLayer && vectorLayer.removeGeometry([mapRoute]); //remove vector if already existed
       map.remove(); // Remove the map instance on component unmount
     };
   }, []);

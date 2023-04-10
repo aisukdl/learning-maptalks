@@ -1,6 +1,6 @@
 import * as maptalks from 'maptalks';
 
-export function createMap(mapRoute) {
+export function createMap(mapLayers) {
     const map = new maptalks.Map('map', {
       center: [100.5169143, 13.71788],
       zoom: 14,
@@ -8,9 +8,7 @@ export function createMap(mapRoute) {
         urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
         subdomains: ["a", "b", "c", "d"]
       }),
-      layers: [
-        // new maptalks.VectorLayer('vector',[mapRoute])
-      ]
+      layers: mapLayers
     });
   
     return map;
