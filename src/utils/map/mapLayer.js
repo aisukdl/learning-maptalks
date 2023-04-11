@@ -1,7 +1,7 @@
 import * as maptalks from 'maptalks';
 import { mapRoute } from './mapRoute'
-import { markers } from './marker';
+import { textMarkers,restroomMarkers } from './marker';
 
 
-const layers = [mapRoute,...markers]
-export const mapLayers = [new maptalks.VectorLayer('v', layers)]
+const mapGeometries = [mapRoute,...textMarkers,...restroomMarkers]
+export const mapLayers = [new maptalks.VectorLayer('v', mapGeometries)]

@@ -1,28 +1,34 @@
 import * as maptalks from 'maptalks';
 import mapData from '../mapData.json'
+import restroomIcon from '../icons/restroom.png'
 
-export const marker1 = new maptalks.Marker(
-    mapData.features[0].geometry.coordinates,
-    {
-      'symbol' : {
-      'textFaceName' : 'sans-serif',
-      'textName' : mapData.features[0].properties.name.en,
-      'textFill' : '#34495e',
-      'textHorizontalAlignment' : 'right',
-      'textSize' : 20}
-    }
-  );
+
 
 const features = mapData.features
 
-export const markers = features.map(feature => new maptalks.Marker(
+export const restroomMarkers = features.filter(feature => feature.properties.category ==='restroom').map(feature => new maptalks.Marker(
     feature.geometry.coordinates,
     {
       'symbol' : {
+        'markerFile'   : restroomIcon,
+        'markerWidth'  : 40,
+        'markerHeight' : 40,
+        'markerDx'     : 0,
+        'markerDy'     : 0,
+        'markerOpacity': 1
+      }
+    }
+))
+
+export const textMarkers = features.filter(feature => feature.properties.category !=='restroom').map(feature => new maptalks.Marker(
+  feature.geometry.coordinates,
+  {
+    'symbol' : {
       'textFaceName' : 'sans-serif',
       'textName' : feature.properties.name.en,
       'textFill' : '#34495e',
-      'textHorizontalAlignment' : 'right',
-      'textSize' : 20}
-    }
+      'textHorizontalAlignment' : 'center',
+      'textSize' : 20
+      }
+  }
 ))
