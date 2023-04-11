@@ -23,6 +23,9 @@ export const restroomMarkers = features.filter(feature => feature.properties.cat
 export const textMarkers = features.filter(feature => feature.properties.category !=='restroom').map(feature => new maptalks.Marker(
   feature.geometry.coordinates,
   {
+    'properties': {
+      'altitude': 200
+    },
     'symbol' : {
       'textFaceName' : 'sans-serif',
       'textName' : feature.properties.name.en,
