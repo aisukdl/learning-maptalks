@@ -2,8 +2,8 @@ import * as maptalks from 'maptalks';
 import mapData from '../mapData.json'
 
 
-const route = mapData.route.split(', ').map(coord => coord.split(' ').map(Number));
-export const mapRoute = new maptalks.LineString(route, {
+const coordinates = mapData.route.split(', ').map(coord => coord.split(' ').map(Number));
+export const mapRoute = new maptalks.LineString(coordinates, {
       arrowStyle : null, // arrow-style : now we only have classic
       arrowPlacement : 'vertex-last', // arrow's placement: vertex-first, vertex-last, vertex-firstlast, point
       visible : true,
