@@ -1,8 +1,8 @@
 import * as maptalks from 'maptalks';
-import mapConfig from '../mapConfig.json'
+import mapData from '../mapData.json'
 
 
-const route = mapConfig.route.split(', ').map(coord => coord.split(' ').map(Number));
+const route = mapData.route.split(', ').map(coord => coord.split(' ').map(Number));
 export const mapRoute = new maptalks.LineString(route, {
       arrowStyle : null, // arrow-style : now we only have classic
       arrowPlacement : 'vertex-last', // arrow's placement: vertex-first, vertex-last, vertex-firstlast, point

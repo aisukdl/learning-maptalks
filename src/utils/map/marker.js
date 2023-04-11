@@ -1,19 +1,19 @@
 import * as maptalks from 'maptalks';
-import mapConfig from '../mapConfig.json'
+import mapData from '../mapData.json'
 
 export const marker1 = new maptalks.Marker(
-    mapConfig.features[0].geometry.coordinates,
+    mapData.features[0].geometry.coordinates,
     {
       'symbol' : {
       'textFaceName' : 'sans-serif',
-      'textName' : mapConfig.features[0].properties.name.en,
+      'textName' : mapData.features[0].properties.name.en,
       'textFill' : '#34495e',
       'textHorizontalAlignment' : 'right',
       'textSize' : 20}
     }
   );
 
-const features = mapConfig.features
+const features = mapData.features
 
 export const markers = features.map(feature => new maptalks.Marker(
     feature.geometry.coordinates,
