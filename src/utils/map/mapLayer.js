@@ -1,6 +1,6 @@
 import * as maptalks from 'maptalks';
 import { mapRoute } from './mapRoute'
-import { markers } from './Marker';
+import { markers } from './marker';
 
 
 const layers = [mapRoute,...markers]
