@@ -1,7 +1,7 @@
 import * as maptalks from 'maptalks';
 
-export function createMap(mapLayers,mapRef) {
-    const map = new maptalks.Map(mapRef.current, {
+export function createMap(mapLayers,id) {
+    const map = new maptalks.Map(id, {
       center: [100.5169143, 13.71788],
       zoom: 14,
       baseLayer: new maptalks.TileLayer('base', {
